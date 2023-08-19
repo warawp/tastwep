@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form align="center">
+        
+        <div align="left"> <!--ใส่ข้อมูลที่อยากจะเก็บลงไป-->
+            <label for="firstnam">ชื่อจริง</label> <!--ป้ายกำกับว่าอยากให้ระบุข้อมูลอะไร-->
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ(ก-ฮ)" required>
+
+        </div>
+        <div> 
+            <label for="laststnam">นามสกุล</label> 
+            <input type="text" name="lname" requierd>
+
+        </div>
+
+        <div> 
+            <label for="lastname">อีเมล</label> 
+            <input type="email" name="email" requierd>
+
+        </div>
+
+        <div> 
+            <label for="laststnam">password</label> 
+            <input type="password" name="..." requierd>
+
+        </div>  <br>
+
+        <!--ใส่ข้อความยาวๆ-->
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="20" rows="5"> </textarea>
+        </div>
+
+        <div> <!--การคำนวณ-->
+            <label for="age">อายุ</label> 
+            <input type="number" name="age" min="0" max="100" value="2" readonly>
+
+        </div>  <br>
+
+        <div> <!--ใส่ปฏิทิน-->
+            <label for="birth">วันเกิด</label> 
+            <input type="date" name="birthdate" >
+
+        </div>  <br>
+        
+        <div> <!--เบอร์โทรศัพท์-->
+            <label for="tel">เบอร์โทรศัพท์</label> 
+            <input type="tel" name="tel">
+
+        </div>  <br>
+
+        <div> <!--สี-->
+            <label for="color">สีที่ชอบ</label> 
+            <input type="color" name="color" >
+
+        </div>  <br>
+
+        <div> <!--ช่วงตัวเลข เป็นสไลด์-->
+            <label for="num">ช่วงตัวเลขที่ชอบ</label> 
+            <input type="range" name="ragnenum" value="12">
+
+        </div>  <br>
+
+
+        <!-- การสร้างตัวเลือก -->
+
+<!-- select -->
+        <div>
+            <label for="educate">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="ปริญญาตรี" selected>ปริญญาตรี</option> <!--selected=กำหนดค่านี้เป็นค่าเริ่มต้น -->
+                <option value="มัธยม">มัธยม</option>
+                <option value="ประถม">ประถม</option>
+                <option value="ไม่ได้เรียน">ไม่ได้เรียน</option>
+                
+            </select>
+
+        </div>
+<!-- radio  -->
+        <div> <!--ช่วงตัวเลข เป็นสไลด์-->
+            <label for="">เพศ</label> 
+            <input type="radio" name="gender" >เพศชาย
+            <input type="radio" name="gender" >เพศหญิง
+            <input type="radio" name="gender" >เพศหลากหลาย
+            <!-- name="" เป็นการแบ่งกลุ่ม -->
+
+        </div>  <br>
+
+        <div> <!---->
+            <label for="num">ช่วงตัวเลขที่ชอบ</label> 
+            <input type="checkbox" name="fav"> สร้างเว็บ
+            <input type="checkbox" name="fav"> สร้างเกม
+            <input type="checkbox" name="fav"> อื่นๆ
+
+        </div>  <br>
+
+        <div> <!---->
+            <label for="num">แนบเอกสาร</label> 
+            <input type="file" name="fav"> 
+            
+        </div>  <br>
+
+        <div> <!---->
+            <label for="num">แนบเว็บไซต์</label> 
+            <input type="url" > 
+        </div>  <br> <br>
+
+        <div> <!---->
+            
+            <input type="submit" value="บันทึกข้อมูล"> 
+        </div>  <br>
+
+        <div>
+            <!-- <input type="submit" value="บันทึกข้อมูล"> ไม่ต้องมีก็ได้ -->
+            <button type="submit">แสดงข้อมูล</button>
+        </div> <br>
+
+        <div>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    
+
+
+
+    </form>
+
+</body>
+</html>
